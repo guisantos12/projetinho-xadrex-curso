@@ -11,11 +11,10 @@ namespace XadrexConsole
     {
         static void Main(string[] args)
         {
-            Posicao p;
+            Tabuleiro tab;
+            tab = new Tabuleiro(8,8);
 
-            p = new Posicao(4, 5);
-
-            Console.WriteLine("Posição: "+p);
+            
             Console.ReadLine();
         }
     }
