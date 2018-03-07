@@ -18,5 +18,10 @@ namespace XadrexConsole.tabuleiro
             this.colunas = colunas;
             pecas = new peca[linhas, colunas];
         }
+
+        public peca Peca(int linha, int coluna)
+        {
+            return pecas[linha, coluna];
+        }
     }
 }
