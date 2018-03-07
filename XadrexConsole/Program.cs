@@ -12,21 +12,10 @@ namespace XadrexConsole
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Tabuleiro tab;
-                tab = new Tabuleiro(8, 8);
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
 
-                tab.colocarPeca(new Torre(tab, Cor.preta), new Posicao(0, 0));
-                tab.colocarPeca(new Torre(tab, Cor.preta), new Posicao(1, 9));
-                tab.colocarPeca(new Rei(tab, Cor.preta), new Posicao(0, 2));
-
-                Tela.imprimirTabuleiro(tab);
-            }
-            catch (TabuleiroException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Console.WriteLine(pos);
+            Console.WriteLine(pos.toPosicao());
             Console.ReadLine();
         }
     }
