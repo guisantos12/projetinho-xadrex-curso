@@ -23,5 +23,11 @@ namespace XadrexConsole.tabuleiro
         {
             return pecas[linha, coluna];
         }
+
+        public void colocarPeca(peca p, Posicao pos)
+        {
+            pecas[pos.linha, pos.coluna] = p;
+            p.posicao = pos;
+        }
     }
 }

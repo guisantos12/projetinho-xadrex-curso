@@ -13,9 +13,9 @@ namespace XadrexConsole.tabuleiro
         public int qteMovimento { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public peca(Posicao posicao, Tabuleiro tabi, Cor cor)
+        public peca(Tabuleiro tabi, Cor cor)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.tab = tabi;
             this.cor = cor;
             this.qteMovimento = 0;
