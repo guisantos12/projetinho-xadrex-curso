@@ -20,5 +20,10 @@ namespace XadrexConsole.tabuleiro
             this.cor = cor;
             this.qteMovimento = 0;
         }
+
+        public void IncrementarQteMovimentos()
+        {
+            qteMovimento++;
+        }
     }
 }
