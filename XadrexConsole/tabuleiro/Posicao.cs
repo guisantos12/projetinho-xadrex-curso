@@ -25,5 +25,11 @@ namespace XadrexConsole.tabuleiro
 
         }
 
+        public void definirValores(int Linha, int Coluna)
+        {
+            this.linha = Linha;
+            this.coluna = Coluna;
+        }
+
     }
 }

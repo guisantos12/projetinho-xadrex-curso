@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XadrexConsole.tabuleiro
 {
-    class peca
+    abstract class peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
@@ -25,5 +25,8 @@ namespace XadrexConsole.tabuleiro
         {
             qteMovimento++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
+        
     }
 }
